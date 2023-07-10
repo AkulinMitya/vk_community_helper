@@ -5,12 +5,12 @@ from time_manager import TimeManager
 
 def main():
     # podslushano_id = 59053641
-    print("Hi! check help.")
+    print("Hi! check Readme.")
     group_id = input("Input your group id\n")
     post_name = input("Input your post name\n")
     post_number = int(input("Input your post number\n"))
     post_times = []
-    print("input post times, format '%Y:%m:%d:%H:%M'")
+    print("input post times, format 'year:month:day:hours:minutes'\n")
     for i in range(post_number):
         post_time = input()
         post_time = TimeManager.convert_to_unix_timestamp(post_time)
