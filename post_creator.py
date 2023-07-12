@@ -11,7 +11,7 @@ def get_token(filename: str):
 
 class PostCreator:
     def __init__(self, group_id):
-        self.token = get_token("token.json")
+        self.token = get_token("resources.json")
         self.group_id = group_id
 
     def publicate_post(self, post, time):
